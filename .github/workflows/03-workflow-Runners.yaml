@@ -1,8 +1,8 @@
 name: 02 - Workflow Events
 on:
-  workflow_dispatch:
-  #push:
+  push:
   #pull_request:
+  #workflow_dispatch:
 
 jobs:
   ubuntu-echo:
@@ -12,4 +12,3 @@ jobs:
         run: |
           echo "This job is running on an Ubuntu runner."
           echo "Runner OS: $RUNNER_OS"
-          
