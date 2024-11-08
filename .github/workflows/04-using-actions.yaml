@@ -10,3 +10,11 @@ jobs:
       - name: Printing Folders
         run: ls
         working-directory: 04-using-actions/react-app
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+      - name: Install dependencies
+        run: npm ci
+        working-directory: 04-using-actions/react-app
+
